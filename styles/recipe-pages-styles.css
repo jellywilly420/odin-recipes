@@ -1,82 +1,118 @@
+/** {
+    border: 2px solid burlywood;
+}*/
 body {
-    width: 90%;
-    margin: 0 auto;
+    background-color: #f7f7f7;
 }
-h2 {
+.main {
+    width: 85%;
+    margin: 4vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+.header, .intro, .instructions {
+    width: 100%;
+}
+h1, .steps, .ingredients {
+    margin: 3vh 0;
+}
+h1, h2, h3 {
     margin: 0;
-    font-size: 1.3;
 }
 h1 {
     text-align: center;
+    font-size: 3em;
+    background-color: #76BFBA;
+}
+h2 {
     font-size: 2em;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-* {
-    border: 1px solid red;
+h3 {
+        font-size: 1.5em;
+}
+li {
+    line-height: 1.2em;
+    font-size: 1.3em;
+    margin: 10px 0;
 }
 .intro {
-    margin-top: 1em;
-    display: flex;
-    /* flex: 1; */
+    background-color: #6496ED;
+    display: flex; 
     gap: 15px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.image {
+    width: 65%;
+    height: 65%;
+    max-width: 500px;
+    max-height: 500px;
+    flex: auto;
 }
 .text {
     display: flex;
-    width: 60%;
-    gap: 5%;
+    width: 30%;
+    max-width: 700px;
+    gap: 3vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* .text h2, .text p {
+ .text h2, .text p {
     width: 95%;
-} */
-.image {
-    width: 60%;
-    height: 60%;
-    max-width: 500px;
-    max-height: auto;
-}
+    margin: 0;
+} 
+
 img {
     width: 100%;
     height: 100%;
+
 }
 .instructions {
-    margin-top: 5vw;
+    background-color: #64c4ed;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.ingredients {
+.ingredients, .steps {
     width: 40%;
+    background-color: #f0d78c;
+/*    color: #4f81c7;*/
 }
-.steps {
-    width: 40%;
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .intro {
-        margin: 0 auto;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         font-size: .8em;
-        width: 80%;
+        width: 100%;
     }
     .text ,.image {
         width: 100%;
+        justify-content: center;
+    }
+    p {
+        font-size: 1.6em;
     }
     .instructions {
+        width: 100%;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        line-height: 1.2em;
     }
-    .ingredients {
-        width: 80%;
+    li {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        margin: 5px;
     }
-    .steps {
-        width: 80%;
+    .ingredients, .steps {
+        width: 100%;
     }
 }
+
