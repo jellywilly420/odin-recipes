@@ -49,6 +49,7 @@ ul {
 }
 .header {
 	display: flex;
+	gap: 25px;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 5vw;
