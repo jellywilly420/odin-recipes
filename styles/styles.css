@@ -21,6 +21,7 @@ body {
 .container {
 	background-color: #c7e6df;
 	width: 50%;
+	max-width: 400px;
 	margin: 1em auto 1em auto;
 	padding: 2px 0 2px 2px;
 	border: 3px black solid;
@@ -32,6 +33,7 @@ body {
 	border-radius: 9000px;
 	border: 3px solid #B4CAC5;
 	width: 60%;
+	max-width: 250px;
 	height: auto;
 }
 h2 {
