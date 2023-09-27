@@ -1,118 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Sans&display=swap');
+/*https://palettes.shecodes.io/palettes/1313#palette*/
 /** {
-    border: 2px solid burlywood;
+    border: 2px solid greenyellow;
 }*/
+* {
+    margin: 0;
+}
 body {
-    background-color: #f7f7f7;
+    background-color: #385170;
 }
 .main {
-    width: 85%;
-    margin: 4vh auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vh;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 2px 1px 10px #142d4c;
 }
-.header, .intro, .instructions {
-    width: 100%;
-}
-h1, .steps, .ingredients {
-    margin: 3vh 0;
-}
-h1, h2, h3 {
-    margin: 0;
-}
-h1 {
-    text-align: center;
-    font-size: 3em;
-    background-color: #76BFBA;
-}
-h2 {
-    font-size: 2em;
-}
-p {
-    font-size: 1.5em;
-}
-h3 {
-        font-size: 1.5em;
-}
-li {
-    line-height: 1.2em;
-    font-size: 1.3em;
-    margin: 10px 0;
-}
-.intro {
-    background-color: #6496ED;
-    display: flex; 
-    gap: 15px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.image {
-    width: 65%;
-    height: 65%;
-    max-width: 500px;
-    max-height: 500px;
-    flex: auto;
-}
-.text {
-    display: flex;
-    width: 30%;
-    max-width: 700px;
-    gap: 3vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- .text h2, .text p {
-    width: 95%;
-    margin: 0;
-} 
-
 img {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    display: block;
+    height: auto;
+    border: 2px solid #9FC5D3;
+    border-radius: 10%;
+    box-shadow: 3px 3px 10px #385170;
+    margin: 1vw auto;
+}
 
+
+
+
+
+
+
+
+h1 {
+    background-color: #142d4c;
+    text-align: center;
+    color: #ececec;
+    font-size: 9vw;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 3vw 1vw;
+}
+.intro h2 {
+    text-align: center;
+    background-color: #9fd3c7;
+    color: #142d4c;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    padding: 1vw;
+}
+.intro p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+}
+
+.intro {
+    background-color: #9fd3c7;
+    padding: 3vw 1.5vw;
 }
 .instructions {
-    background-color: #64c4ed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    background-color: #ececec;
 }
-.ingredients, .steps {
-    width: 40%;
-    background-color: #f0d78c;
-/*    color: #4f81c7;*/
-}
-@media only screen and (max-width: 800px) {
-    .intro {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        font-size: .8em;
-        width: 100%;
-    }
-    .text ,.image {
-        width: 100%;
-        justify-content: center;
-    }
-    p {
-        font-size: 1.6em;
-    }
-    .instructions {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        line-height: 1.2em;
-    }
-    li {
-        font-size: 1.3em;
-        line-height: 1.2em;
-        margin: 5px;
-    }
-    .ingredients, .steps {
-        width: 100%;
-    }
-}
-
