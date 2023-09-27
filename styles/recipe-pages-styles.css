@@ -1,0 +1,63 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+h2 {
+    margin: 0;
+    font-size: 1.3;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+p {
+    font-size: 1.2em;
+}
+* {
+    border: 1px solid red;
+}
+.intro {
+    margin-top: 1em;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+}
+.text {
+    display: flex;
+    width: 60%;
+    gap: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text h2, .text p {
+    width: 95%;
+}
+.image {
+    width: 60%;
+    height: 60%;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 500px;
+    max-height: 500px;
+    align-self: flex-start;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.instructions {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.ingredients {
+    width: 40%;
+}
+.steps {
+    width: 40%;
+}
