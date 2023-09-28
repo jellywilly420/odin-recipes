@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Sans&display=swap');
-/*https://palettes.shecodes.io/palettes/1313#palette*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis&family=Josefin+Sans&display=swap');
 /** {
     border: 2px solid greenyellow;
 }*/
 * {
     margin: 0;
+    padding: 0;
 }
 body {
     background-color: #385170;
@@ -12,24 +12,16 @@ body {
 .main {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 2px 1px 10px #142d4c;
+    box-shadow: 5px 5px 15px 15px #142d4c;
 }
 img {
     width: 85%;
-    display: block;
     height: auto;
-    border: 2px solid #9FC5D3;
-    border-radius: 10%;
+    display: block;
+    border-radius: 5%;
     box-shadow: 3px 3px 10px #385170;
     margin: 1vw auto;
 }
-
-
-
-
-
-
-
 
 h1 {
     background-color: #142d4c;
@@ -39,27 +31,62 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     padding: 3vw 1vw;
 }
-.intro h2 {
-    text-align: center;
-    background-color: #9fd3c7;
-    color: #142d4c;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 5vw;
-    padding: 1vw;
-}
-.intro p {
-    width: 90%;
-    margin: 0 auto;
-    text-align: justify;
-    font-family: 'Dosis', sans-serif;
-    font-size: 4vw;
-    font-weight: 800;
-}
 
 .intro {
     background-color: #9fd3c7;
     padding: 3vw 1.5vw;
 }
+.intro h2 {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    background-color: #9fd3c7;
+    color: #142d4c;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    padding: 1vw 1vw 2vw;
+}
+.intro p {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    padding-bottom: 2vw;
+}
+
 .instructions {
-    background-color: #ececec;
+    background-color: #a2a8d3;
+    color: #ececec;
+    width: 100%;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+}
+.instructions .ingredients, .instructions .steps {
+    width: 100%;
+    margin: auto;
+}
+.instructions h2{
+    width: 100%;
+    font-size: 4vw;
+    text-decoration: underline;
+    padding: 2vw 0;
+    background-color: #142d4c;
+    text-align: center;
+}
+.instructions h3{
+    font-size: 3.5vw;
+    color: #113f67;
+    padding: 2vw 0;
+}
+ul, ol {
+    width: 90%;
+    margin: 2vw auto;
+}
+li {
+    color: #e7eaf6;
+    margin-left: 7vw;
+    font-size: 3vw;
+    line-height: 5vmin;
 }
