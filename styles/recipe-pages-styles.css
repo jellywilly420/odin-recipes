@@ -12,14 +12,14 @@ body {
 .main {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 5px 5px 15px 15px #142d4c;
+    box-shadow: .5vmin .5vmin 1vmin 1vmin #142d4c;
 }
 img {
     width: 85%;
     height: auto;
     display: block;
     border-radius: 5%;
-    box-shadow: 3px 3px 10px #385170;
+    box-shadow: .3vmin .3vmin 1vmin #385170;
     margin: 1vw auto;
 }
 
@@ -27,9 +27,9 @@ h1 {
     background-color: #142d4c;
     text-align: center;
     color: #ececec;
-    font-size: 9vw;
     font-family: 'Josefin Sans', sans-serif;
     padding: 3vw 1vw;
+    font-size: 9vw;
 }
 
 .intro {
@@ -58,7 +58,6 @@ h1 {
 
 .instructions {
     background-color: #455d7a;
-/*    #a2a8d3*/
     color: #ececec;
     width: 100%;
     margin: auto;
@@ -80,7 +79,7 @@ h1 {
     font-size: 3.5vw;
     color: #272343;
     padding: 2vmin 0;
-    text-shadow: 1px 1px 4px #233142;
+    text-shadow: .1vmin .1vmin .5vmin #233142;
     text-decoration: underline;
     text-decoration-style: double;
     text-underline-offset: .5vw;
@@ -96,5 +95,105 @@ li {
     padding: 1vw 0;
     font-size: 4vmin;
     line-height: 5vmin;
+}
 
+h4, .float {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    z-index: 2;
+}
+h4 {
+    padding: .5vw;
+    font-size: 1.5vw;
+    aspect-ratio: 1;
+    background-color: #a2a8d3;
+    border-radius: 100%;
+}
+
+@media only screen and (min-width: 650px){
+h1 {
+    padding: 2vw 0 1vw;
+    font-size: 4vw;
+}
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 0;
+    align-items: center;
+    align-self: center;
+    gap: 2.5vw;
+}
+.intro .subcontainer {
+    width: 90%;
+    display: flex;
+}
+.intro .h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67%;
+}
+.intro h2 {
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    font-size: 3.5vw;
+}
+.intro .image {
+    width: 33%;
+    aspect-ratio: 1/1;
+}
+img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.intro .p {
+    width: 90%;
+    margin: 0 auto;
+}
+.intro p {
+    font-size: 2vw;
+    padding: 0 0 2vw 0;
+    text-align: justify;
+}
+
+.instructions {
+    display: flex;
+    justify-content: space-evenly;
+}
+.instructions .steps , .instructions .ingredients {
+    margin: 0;
+}
+.instructions .steps {
+    border-left: .5vw solid #142d4c;
+}
+.instructions .ingredients {
+    border-right: .5vw solid #142d4c;
+}
+.instructions h2{
+    font-size: 2vw;
+}
+.instructions h3{
+    font-size: 1.7vw;
+    padding: 1vmin 0;
+}
+ul, ol {
+    margin: 2vw auto;
+    width: 85%;
+}
+li {
+    margin-left: 3vw;
+    padding: 1vmin 0;
+    font-size: 1.6vw;
+    line-height: 4vmin;
+    text-align: justify;
+}
 }
