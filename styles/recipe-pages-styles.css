@@ -97,21 +97,52 @@ li {
     line-height: 5vmin;
 }
 
-h4, .float {
+.float {
     position: fixed;
-    top: 2vh;
-    left: 2vw;
+    bottom: 7vh;
+    left: 1vh;
     z-index: 2;
 }
-h4 {
-    padding: .5vw;
-    font-size: 1.5vw;
+.button {
+    margin: 0;
+    width: 3.8vh;
     aspect-ratio: 1;
     background-color: #a2a8d3;
+    box-shadow: none;
+}
+.button-container {
+    padding: 1.5vh;
+    background-color: #a2a8d3;
     border-radius: 100%;
+    box-shadow: 0 0 1vw #142d4c;
+}
+.button-container:active {
+    box-shadow: none;
+}
+.button-container:hover {
+    box-shadow: 0 0 1vw #9fd3c7;
 }
 
 @media only screen and (min-width: 650px){
+.float {
+    position: fixed;
+    bottom: 3vh;
+    left: 2vw;
+    z-index: 2;
+}
+.button {
+    margin: 0;
+    width: 4vw;
+    aspect-ratio: 1;
+    background-color: #a2a8d3;
+    box-shadow: none;
+}
+.button-container {
+    padding: 1.4vw;
+    background-color: #a2a8d3;
+    border-radius: 100%;
+    box-shadow: 0 0 1.2vw #142d4c;
+}
 h1 {
     padding: 2vw 0 1vw;
     font-size: 4vw;
