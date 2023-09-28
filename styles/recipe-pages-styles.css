@@ -53,11 +53,12 @@ h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 4vw;
     font-weight: 800;
-    padding-bottom: 2vw;
+    padding: 2vw 0;
 }
 
 .instructions {
-    background-color: #a2a8d3;
+    background-color: #455d7a;
+/*    #a2a8d3*/
     color: #ececec;
     width: 100%;
     margin: auto;
@@ -77,16 +78,23 @@ h1 {
 }
 .instructions h3{
     font-size: 3.5vw;
-    color: #113f67;
-    padding: 2vw 0;
+    color: #272343;
+    padding: 2vmin 0;
+    text-shadow: 1px 1px 4px #233142;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-underline-offset: .5vw;
 }
 ul, ol {
     width: 90%;
     margin: 2vw auto;
+    text-shadow: 1px 1px 3px #233142;
 }
 li {
     color: #e7eaf6;
     margin-left: 7vw;
-    font-size: 3vw;
+    padding: 1vw 0;
+    font-size: 4vmin;
     line-height: 5vmin;
+
 }
